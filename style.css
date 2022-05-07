@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
   /* To avoid padding from extending the width of the page */
   box-sizing: border-box;
@@ -6,4 +8,47 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #061724;
+}
+
+.button-container {
+  display: inline-block;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button-container:hover,
+button:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+}
+@media all and (max-width: 30em) {
+  .button-container {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+button {
+  padding: 10px 20px;
+
+  margin: 0 auto;
+  background: none;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
